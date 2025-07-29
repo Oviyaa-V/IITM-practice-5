@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student details</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STUDENT ID</th>
+                <th>COURSE ID</th>
+                <th>MARKS</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for i in l %}
+            <tr>
+                <td> {{i[0]}}</td>
+                <td> {{i[1]}}</td>
+                <td> {{i[2]}}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="2"> Total marks</td>
+                <td> {{ total }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="/"> Go Back </a>
+</body>
+</html>

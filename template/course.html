@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>COURSE DETAILS</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>AVERAGE MARKS</th>
+                <th>MAXIMUM MARKS</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> {{avg}} </td>
+                <td> {{max}} </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="{{ url_for('static', filename=img) }}" />
+
+    <a href="/">Go Back</a>
+
+</body>
+</html>
